@@ -355,17 +355,17 @@ input::-webkit-input-placeholder {
 
     .onboarding .box {
         width: 100%;
-        height: 340px;
-        background-color: var(--gray);
+        height: 280px;
+        background-color: var(--black);
         border-radius: 20px 20px 0px 0px;
-        margin-top: -191px;
+        margin-top: -131px;
     }
 
     .onboarding .box a {
         color: var(--gray);
         font-weight: bold;
         text-decoration: none;
-        margin-top: 160px;
+        margin-top: 220px;
     }
 
     /*-- Login Page --*/
