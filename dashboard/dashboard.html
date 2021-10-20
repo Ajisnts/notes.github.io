@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta name="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <title>Dashboard | Note To Self</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+
+        <!-- Favicon -->
+        <link href="../assets/img/logo_black.svg" alt="logo" rel="icon">
+    
+        <!-- Css -->
+        <link href="../assets/css/bootstrap.css" rel="stylesheet">
+        <link href="../assets/css/style.css" rel="stylesheet">
+
+        <!-- Font -->
+        <link href="../assets/fonts/Roboto-Thin.ttf" rel="stylesheet">
+
+        <!-- Javascript -->
+        <script src="../assets/js/bootstrap.js"></script>
+        <script src="../assets/js/jquery.js"></script>
+        <script src="../assets/js/popper.js"></script>
+        <script src="../assets/js/style.js"></script>
+
+        <!-- Slick CSS -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+        <!-- Slick JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <!------------------------------------------
+            Author : github - ajisnts
+            Name : Note To Self v.1
+        ------------------------------------------->
+    </head>
+
+    <body>
+        <div class="desktop mx-auto text-center">
+            <img src="../assets/img/404.svg" alt="404page">
+            <h4>
+                Oops... <strong>we don't have </strong>open this page
+            </h4>
+            <p>
+                this website can't open in <strong>desktop </strong>mode, <br>
+                you can open it in <strong>mobile </strong>mode.
+            </p>
+        </div>
+
+        <div class="mobile">
+            <div class="dashboard">
+                <div class="bg"></div>
+                <div class="navbar text-center">
+                    <a href="#" onclick="openSidebar()">
+                        <img src="../assets/icon/menu.svg" alt="menu">
+                    </a>
+                    <div class="navbar-text">
+                        Dashboard
+                    </div>
+                    <div class="photo-profile">
+                        <div class="dropdown">
+                            <a data-toggle="dropdown">
+                                <img src="../assets/icon/photo.jpg" alt="photo-profile">
+                            </a>
+                            <div class="dropdown-menu text-center">
+                                <a class="dropdown-item mb-2" href="#">
+                                    My Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Logout
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar" id="sidebar">
+                    <div class="container">
+                        <a href="#" onclick="closeSidebar()">
+                            <img class="close" src="../assets/icon/close.svg" alt="close">
+                        </a>
+                        <div class="box-profile">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="photo-profile">
+                                        <img src="../assets/icon/photo.jpg" al="photo-profile">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <h5>Aji Santoso</h5>
+                                    <span class="badge badge-success">
+                                        Online
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidenav">
+                            <h5>Account</h5>
+                            <a href="./dashboard.html" class="active">
+                                <img src="../assets/icon/home.svg" alt="dashboard">
+                                Dashboard
+                            </a>
+                            <a href="./myaccount.html">
+                                <img src="../assets/icon/myaccount.svg" alt="myaccount">
+                                My Account
+                            </a>
+                            <a href="./myprofile.html">
+                                <img src="../assets/icon/myprofile.svg" alt="myprofile">
+                                My Profile
+                            </a>
+                            <h5>Category</h5>
+                            <a href="../notes/notes.html">
+                                <img src="../assets/icon/notes.svg" alt="notes">
+                                Notes
+                            </a>
+                            <a href="../reminders/reminders.html">
+                                <img src="../assets/icon/reminders.svg" alt="reminders">
+                                Reminders
+                            </a>
+                            <a href="../archived/archived.html">
+                                <img src="../assets/icon/archived.svg" alt="archived">
+                                Archived
+                            </a>
+                            <h5>System</h5>
+                            <a href="#">
+                                <img src="../assets/icon/logout.svg" alt="logout">
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container text-center text-detail">
+                    <h5>save your</h5>
+                    <h1 class="font-weight-bold">NOTES <br> EVERY DAYS</h1>
+                </div>
+                <div class="container">
+                    <div class="category text-center">
+                        <div class="row p-3">
+                            <div class="col-3 mx-auto">
+                                <a href="#">
+                                    <img src="../assets/icon/notes.svg" alt="notes">
+                                </a>
+                            </div>
+                            <div class="col-3 mx-auto">
+                                <a href="#">
+                                    <img src="../assets/icon/reminders.svg" alt="reminders">
+                                </a>
+                            </div>
+                            <div class="col-3 mx-auto">
+                                <a href="#">
+                                    <img src="../assets/icon/archived.svg" alt="archived">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container slick">
+                    <div class="slider-dashboard">
+                        <div class="detail">
+                            <div class="container">
+                                <img src="../assets/icon/notes.svg" alt="notes">
+                                <h2>Notes</h2>
+                            </div>
+                            <div class="container text-justify">
+                                <h5>All notes view is available in here</h5>
+                            </div>
+                            <div class="container icon d-inline ml-5">
+                                <a href="#">
+                                    <img src="../assets/icon/view.svg" alt="view">
+                                    View
+                                </a>
+                            </div>
+                            <div class="container icon d-inline">
+                                <a href="#">
+                                    <img src="../assets/icon/add.svg" alt="add">
+                                    Add
+                                </a>
+                            </div>
+                        </div><div class="detail">
+                            <div class="container">
+                                <img src="../assets/icon/reminders.svg" alt="reminders">
+                                <h2>Reminders</h2>
+                            </div>
+                            <div class="container text-justify">
+                                <h5>All notes reminders view is available in here</h5>
+                            </div>
+                            <div class="container icon d-inline ml-5">
+                                <a href="#">
+                                    <img src="../assets/icon/view.svg" alt="view">
+                                    View
+                                </a>
+                            </div>
+                            <div class="container icon d-inline">
+                                <a href="#">
+                                    <img src="../assets/icon/add.svg" alt="add">
+                                    Add
+                                </a>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="container">
+                                <img src="../assets/icon/archived.svg" alt="archived">
+                                <h2>Archived</h2>
+                            </div>
+                            <div class="container text-justify">
+                                <h5>All notes archived view is available in here</h5>
+                            </div>
+                            <div class="container icon d-inline ml-5">
+                                <a href="#">
+                                    <img src="../assets/icon/view.svg" alt="view">
+                                    View
+                                </a>
+                            </div>
+                            <div class="container icon d-inline">
+                                <a href="#">
+                                    <img src="../assets/icon/add.svg" alt="add">
+                                    Add
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigations text-center">
+                    <div class="row">
+                        <div class="col ml-2 active-home">
+                            <a href="#">
+                                <img src="../assets/icon/home.svg" alt="home" class="home">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="../notes/notes.html">
+                                <img src="../assets/icon/notes.svg" alt="notes">
+                                <h5>Notes</h5>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="../reminders/">
+                                <img src="../assets/icon/reminders.svg" alt="reminders">
+                                <h5>Reminders</h5>
+                            </a>
+                        </div>
+                        <div class="col mr-2">
+                            <a href="../archived/">
+                                <img src="../assets/icon/archived.svg" alt="archived">
+                                <h5>Archived</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- Javascript -->
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/popper.js"></script>
+    <script src="../assets/js/style.js"></script>
+    
+    <!-- Slick JS -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</html>

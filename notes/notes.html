@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta name="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <title>Notes | Note To Self</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+
+        <!-- Favicon -->
+        <link href="../assets/img/logo_black.svg" alt="logo" rel="icon">
+    
+        <!-- Css -->
+        <link href="../assets/css/bootstrap.css" rel="stylesheet">
+        <link href="../assets/css/style.css" rel="stylesheet">
+
+        <!-- Font -->
+        <link href="../assets/fonts/Roboto-Thin.ttf" rel="stylesheet">
+
+        <!-- Javascript -->
+        <script src="../assets/js/bootstrap.js"></script>
+        <script src="../assets/js/jquery.js"></script>
+        <script src="../assets/js/popper.js"></script>
+        <script src="../assets/js/style.js"></script>
+
+        <!-- Slick CSS -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+        <!-- Slick JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <!------------------------------------------
+            Author : github - ajisnts
+            Name : Note To Self v.1
+        ------------------------------------------->
+    </head>
+
+    <body>
+        <div class="desktop mx-auto text-center">
+            <img src="../assets/img/404.svg" alt="404page">
+            <h4>
+                Oops... <strong>we don't have </strong>open this page
+            </h4>
+            <p>
+                this website can't open in <strong>desktop </strong>mode, <br>
+                you can open it in <strong>mobile </strong>mode.
+            </p>
+        </div>
+
+        <div class="mobile">
+            <div class="notes">
+                <div class="navbar text-center">
+                    <a href="#" onclick="openSidebar()">
+                        <img src="../assets/icon/menu.svg" alt="menu">
+                    </a>
+                    <div class="navbar-text">
+                        Notes
+                    </div>
+                    <div class="photo-profile">
+                        <div class="dropdown">
+                            <a data-toggle="dropdown">
+                                <img src="../assets/icon/photo.jpg" alt="photo-profile">
+                            </a>
+                            <div class="dropdown-menu text-center">
+                                <a class="dropdown-item mb-2" href="#">
+                                    My Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    Logout
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar" id="sidebar">
+                    <div class="container">
+                        <a href="#" onclick="closeSidebar()">
+                            <img class="close" src="../assets/icon/close.svg" alt="close">
+                        </a>
+                        <div class="box-profile">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="photo-profile">
+                                        <img src="../assets/icon/photo.jpg" al="photo-profile">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <h5>Aji Santoso</h5>
+                                    <span class="badge badge-success">
+                                        Online
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidenav">
+                            <h5>Account</h5>
+                            <a href="#">
+                                <img src="../assets/icon/home.svg" alt="dashboard">
+                                Dashboard
+                            </a>
+                            <a href="#">
+                                <img src="../assets/icon/myaccount.svg" alt="myaccount">
+                                My Account
+                            </a>
+                            <a href="#">
+                                <img src="../assets/icon/myprofile.svg" alt="myprofile">
+                                My Profile
+                            </a>
+                            <h5>Category</h5>
+                            <a href="#" class="active">
+                                <img src="../assets/icon/notes.svg" alt="notes">
+                                Notes
+                            </a>
+                            <a href="#">
+                                <img src="../assets/icon/reminders.svg" alt="reminders">
+                                Reminders
+                            </a>
+                            <a href="#">
+                                <img src="../assets/icon/archived.svg" alt="archived">
+                                Archived
+                            </a>
+                            <h5>System</h5>
+                            <a href="#">
+                                <img src="../assets/icon/logout.svg" alt="logout">
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="mydata">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Date</th>
+                                    <th>Name</th>
+                                    <th>Content</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <th>2021-10-20</th>
+                                    <th>Lorem Impsum</th>
+                                    <th>Lorem Impsum is Lorem Impsum</th>
+                                    <th>
+                                        <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#confirmation">
+                                            Delete
+                                        </a>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="modal" id="confirmation">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <h5>Are you sure delete this data?</h5>
+                                <div class="float-right">
+                                    <button type="submit" value="#" class="btn btn-dark">
+                                        Ok
+                                    </button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-outline">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container add">
+                    <a href="#" data-toggle="modal" data-target="#input">
+                        <img src="../assets/icon/add.svg" alt="add">
+                    </a>
+                </div>
+
+                <div class="modal" id="input">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <h5 class="text-center font-weight-bold">Input Notes</h5>
+                                <form action="#" method="post">
+                                    <div class="mt-0">
+                                        <label for="#">Date</label>
+                                        <input type="date" class="form-control" id="#" name="#" autocomplete="off" required> 
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="#">Name</label>
+                                        <input type="text" class="form-control" id="#" name="#" autocomplete="off" required> 
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="#">Content</label>
+                                        <input type="text" class="form-control" id="#" name="#" autocomplete="off" required>
+                                    </div>
+                                    <button type="submit" value="#" class="btn btn-dark mt-4 float-right">
+                                        Save
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigations text-center">
+                    <div class="row">
+                        <div class="col ml-2">
+                            <a href="#">
+                                <img src="../assets/icon/home.svg" alt="home" class="home">
+                            </a>
+                        </div>
+                        <div class="col active">
+                            <a href="#">
+                                <img src="../assets/icon/notes.svg" alt="notes">
+                                <h5>Notes</h5>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#">
+                                <img src="../assets/icon/reminders.svg" alt="reminders">
+                                <h5>Reminders</h5>
+                            </a>
+                        </div>
+                        <div class="col mr-2">
+                            <a href="#">
+                                <img src="../assets/icon/archived.svg" alt="archived">
+                                <h5>Archived</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <!-- Javascript -->
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/popper.js"></script>
+    <script src="../assets/js/style.js"></script>
+
+
+</html>
