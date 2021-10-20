@@ -140,9 +140,6 @@ body {
 
 .navbar .dropdown-menu {
   margin-left: -120px;
-  position: relative;
-  z-index: 1;
-  display: block;
 }
 
 label {
